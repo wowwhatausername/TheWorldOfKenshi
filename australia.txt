@@ -1,0 +1,58 @@
+﻿focus_tree = {
+	id = australian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ZHO
+		}
+
+		#modifier = {
+		#	add = 10
+		#	original_tag = AST
+		#	
+		#}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = ZHO_the_dying_city
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = }
+		mutually_exclusive = { focus =  }
+		x = -1
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		add_stability -0.1
+		}
+	}
+
